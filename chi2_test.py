@@ -22,8 +22,10 @@ def get_chi2_test(l1, l2, alpha):
         chi2 += (hist1[i] - exp)**2 / exp
         exp = (hist1[i] + hist2[i]) * len(l2) / (len(l1) + len(l2))
         chi2 += (hist2[i] - exp)**2 / exp
-    p = st.distributions.chi2.isf(alpha, k-1)
+    p = st.distributions.chi2.isf(alpha, k-3)
     if p > chi2:
+        print(p)
+        print(chi2)
         return True
     else:
         return False

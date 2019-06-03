@@ -20,7 +20,7 @@ def smirnov_grubbs(data, alpha):
     return (np.array(x), np.array(o))
 
 alpha = 0.05
-ID = 'naoki'
+ID = input('ID:')
 for i in range(4):
     file_name = ID + '_test' + str(i+1) + '.csv'
     os.chdir(os.path.dirname(os.path.abspath(__file__)) + '/result/row_data')
