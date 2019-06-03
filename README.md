@@ -5,6 +5,7 @@ Human Information Science
 |---body.py		    …計測を行うプログラム群を制御し結果を記録する
 |---tests.py		…計測を行う
 |---menu.py		    …メニュー画面を表示する
+|---intro.py		…実験の概要を説明する
 |---evaluate.py		…計測結果を評価する
 |
 |---outlier.py		…実験結果から外れ値を除去する
